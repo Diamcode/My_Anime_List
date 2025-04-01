@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+#add {
+  padding: 4px 10px;
+  border: none;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+#add:hover {
+  background-color: rgb(206, 79, 0);
+}
+
+.animeimg {
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+}
+
+#myanimelist {
+  display: flex;
+  gap: 30px;
+}
+
+nav {
+  background-color: rgb(72, 72, 72);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1% 10%;
+  min-height: 80px;
+  position: fixed;
+  width: 100%;
+}
+
+#nav_options {
+  display: flex;
+  gap: 20px;
+  color: white;
+}
+
+#nav_options h3 {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+#logo {
+  height: 70%;
+}
+
+nav img {
+  height: 50px;
+  cursor: pointer;
+}
+
+input {
+  padding: 10px 18px;
+  border-radius: 5px;
+  border: none;
+}
+
+#section {
+  display: flex;
+  gap: 80px;
+  padding: 120px 120px;
+}
+
+#left {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  min-width: 240px;
+}
+
+#right {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  align-items: start;
+}
+
+.animeimg1 {
+  width: 250px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#upperright {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  width: 1000px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+#animelist {
+  display: flex;
+  gap: 30px;
+}
+
+.animecard {
+  border: 1px solid grey;
+  width: 250px;
+  height: 500px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  scroll-snap-align: start;
+}
+
+#lowerright {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  width: 1000px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+#lowerright::-webkit-scrollbar {
+  display: none;
+}
+
+.deletebtn {
+  padding: 4px 10px;
+  border: none;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+.deletebtn:hover {
+  background-color: rgb(206, 79, 0);
+}
+
+#buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#buttons i {
+  color: black;
+  border: 1px solid grey;
+  padding: 10px 13px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+#buttons i:hover {
+  color: rgb(255, 255, 255);
+  border: 1px solid orange;
+  padding: 10px 13.5px;
+  border-radius: 100px;
+  background-color: orange;
+}
+
+.movebtn {
+  font-size: 1.4rem;
+
+  border-radius: 50px;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.movebtn:hover {
+  color: orange;
+}
+
+#upperright::-webkit-scrollbar {
+  display: none;
+}
+
+.check {
+  background: linear-gradient(orange, rgb(209, 136, 1));
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 500;
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: 120px;
+}
+
+.check:hover {
+  box-shadow: 0 6px 12px rgba(174, 68, 1, 0.3);
+  background: linear-gradient(rgb(225, 147, 1), rgb(209, 136, 1));
+}
+
+.animeinfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+@media (max-width: 1450px) {
+  #section {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    gap: 80px;
+    padding: 120px 120px;
+    width: 100%;
+  }
+
+  #right {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  #upperright {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    width: 100%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    margin-right: 20px;
+  }
+
+  #lowerright {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    width: 100%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+
+  #animelist {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 1230px) {
+  #section {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    gap: 80px;
+    padding: 120px 80px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  #section {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 80px;
+    padding: 120px 80px;
+    width: 100%;
+  }
+
+  .animeimg1 {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .homeimg {
+    display: none;
+    cursor: pointer;
+  }
+
+  #nav_options h3 {
+    font-size: 0.8rem;
+  }
+
+  #left {
+    display: flex;
+  }
+}

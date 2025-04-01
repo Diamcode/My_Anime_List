@@ -1,0 +1,139 @@
+#categories {
+  display: flex;
+  gap: 20px;
+}
+
+#categories h3 {
+  cursor: pointer;
+  padding: 5px;
+}
+
+#categories h3:hover {
+  text-decoration: underline;
+}
+
+#ranking_img {
+  width: 200px;
+  max-height: 300px;
+  border-radius: 5px;
+}
+
+#main_rankings {
+  margin: 0px 0px;
+  display: flex;
+  padding: 140px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.rankingcards {
+  background-color: rgb(200, 200, 200);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  display: flex;
+    justify-content: space-between;
+    align-items: center !important;
+  
+}
+
+.rankingcards h2 {
+  max-width: 300px;
+}
+
+.description h2 {
+  width: 200px;
+}
+
+#ranking_cards_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0px 5%;
+  gap: 30px 40px;
+  
+}
+
+.added {
+  background: linear-gradient(rgb(0, 0, 0), rgb(42, 42, 42));
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 500;
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: 120px;
+  cursor: default;
+}
+
+nav {
+  background-color: rgb(72, 72, 72);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1% 10%;
+  min-height: 80px;
+  position: fixed;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .rankingcards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center !important;
+  }
+
+  .mylist_img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Horizontal offset, Vertical offset, Blur, Shadow color */
+  }
+
+  .description {
+    min-width: 100px !important;
+  }
+
+  .description h2 {
+    width: 200px;
+  }
+
+  .rankingcards p {
+    display: block !important;
+  }
+}
+
+@media (max-width: 1050px) {
+  #description {
+    min-width: 400px;
+  }
+
+  #list_item {
+    flex-direction: column;
+  }
+
+  nav img {
+    cursor: pointer;
+    display: block;
+  }
+
+  .rankingcards p {
+    display: block !important;
+  }
+
+  .rankingcards {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center !important;
+    max-width: 450px !important;
+  }
+
+  .description h2 {
+    width: 150px;
+  }
+}
